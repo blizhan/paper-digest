@@ -41,6 +41,12 @@
 | [Learning Recursive Multi-Scale Representations for Irregular Multivariate Time Series Forecasting](./knowledge/papers/learning-recursive-multi-scale-representations-for-irregular-multivariate-time-series-forecasting.md) | irregular time series, multi-scale forecasting, representation fusion | [arXiv](https://arxiv.org/abs/2602.21498) · [OpenReview](https://openreview.net/forum?id=JEIDxiTWzB) · [GitHub](https://github.com/Ladbaby/PyOmniTS) | 已讨论 | ReIMTS 不靠 resampling 构造尺度，而是按真实时间 period 做 top-down recursive split；真正亮点是保留 sampling pattern，并用 padding/mask + batch reshape + gated residual 解决不等长跨尺度融合。 |
 | [TimesFM-3: A zero-shot foundation model for multivariate forecasting](./knowledge/papers/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting.md) | time-series foundation model, multivariate forecasting, covariates, zero-shot | [Google Research](https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/) · [GitHub](https://github.com/google-research/timesfm) · [Hugging Face](https://huggingface.co/google/timesfm-3.0-pytorch) | 已讨论 | 实质升级是把 multiple targets、past-only / past-future covariates 和 cross-variate attention 原生放进模型，并用 CPM 做 single-pass horizon；不是第一个支持 future covariates，但当前公开 benchmark 属于最强一档，3.0 权重目前不可商用。 |
 
+### Weather / Forecasting
+
+| Paper | Topic | Links | Status | 一句话判断 |
+| --- | --- | --- | --- | --- |
+| [WeatherNext 3: Increasing resolution and performance of global weather models with raw observations](./knowledge/papers/weathernext-3-increasing-resolution-and-performance-of-global-weather-models-with-raw-observations.md) | global weather forecasting, probabilistic ensemble, satellite observations, continuous decoding | [arXiv](https://arxiv.org/abs/2609.03582) · [Project](https://deepmind.google/science/weathernext/) · [GitHub](https://github.com/google-deepmind/weathernext) | 已讨论 | 真正变化是把 analysis、低延迟卫星、降水/站点 observation 和 cyclone targets 统一进一个 global probabilistic model，并通过 hourly refresh 与 continuous station head 改变 forecast product interface；但它仍是 analysis-anchored，而不是完整替代 data assimilation 的 raw-observation forecaster。 |
+
 ### Agent
 
 | Paper | Topic | Links | Status | 一句话判断 |
