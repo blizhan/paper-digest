@@ -24,7 +24,7 @@ sources:
 - Paper: [arXiv:2609.04540](https://arxiv.org/abs/2609.04540) · [HTML 正文](https://arxiv.org/html/2609.04540v1) · [PDF](https://arxiv.org/pdf/2609.04540)
 - 官方代码与逐评估单元结果：[autogluon/mitra-finetune（Hugging Face，非 GitHub 仓库）](https://huggingface.co/autogluon/mitra-finetune)
 - 权重：[classification](https://huggingface.co/autogluon/mitra-classifier-2) · [regression](https://huggingface.co/autogluon/mitra-regressor-2)
-- 相关原文：[O'Prior / Shaping the Prior](https://arxiv.org/abs/2605.18971) · [TabICLv2 笔记](tabiclv2-a-better-faster-scalable-and-open-tabular-foundation-model.md)
+- 相关讨论：[O'Prior / Shaping the Prior 笔记](shaping-the-prior-how-synthetic-task-distributions-determine-tabular-foundation-model-quality.md) · [TabICLv2 笔记](tabiclv2-a-better-faster-scalable-and-open-tabular-foundation-model.md)
 - 官方代码实际阅读的 commit：`b4701e8148dc33b00ed15d7086ff59816957cde4`（下文代码事实均指此版本）；论文按 `2609.04540v1`（2026-09-03）记录。
 
 ## 一句话结论
