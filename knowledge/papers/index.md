@@ -1,6 +1,7 @@
 # Papers
 
 * [Advancing Open and Reproducible Relational Learning: RelArena-α, TabPFN-Rel and RPI](advancing-open-and-reproducible-relational-learning-relarena-tabpfn-rel-rpi.md) - Relational-learning benchmark 与工程体系分析，重点讨论 DFS flattening + TabPFN、prediction grain、temporal protocol 与公开实现。
+* [Causilo Technical Report](causilo-technical-report.md) - Causilo 的 refine→revisit→compress 架构、分类/回归接口边界与性能证据；明确合成数据和预训练的公开缺口。
 * [Chronos-2: From Univariate to Universal Forecasting](chronos-2-from-univariate-to-universal-forecasting.md) - Chronos-2 的 universal zero-shot forecasting、group attention 与 synthetic multivariate pretraining 分析；重点讨论 multivariate / covariate ICL 的真实增益、复杂度含义和官方实现。
 * [DataSpace: Benchmarking Data Agents for Verifiable Analytics over Heterogeneous Workspaces](dataspace-benchmarking-data-agents.md) - Data Agent benchmark 与系统设计分析，重点提炼 target contract、workspace catalog、join invariants、lineage、verification 和 harness 设计经验。
 * [GraphPFN: A Prior-Data Fitted Graph Foundation Model](graphpfn-a-prior-data-fitted-graph-foundation-model.md) - GraphPFN 的 LimiX graph adapter、synthetic attributed-graph prior 与 PFN 预训练分析，重点讨论 graph-aware pretraining 的证据、复杂 graph generator 的必要性及公开实现。
